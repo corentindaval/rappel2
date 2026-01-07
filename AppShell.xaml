@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="rappel.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:rappel"
+    Shell.FlyoutBehavior="Disabled"
+    Title="rappel">
+
+    <TabBar >
+        <ShellContent
+         Title="messages"
+         ContentTemplate="{DataTemplate local:MainPage}"
+         Route="MainPage" />
+
+        <ShellContent
+         Title="domiciles"
+         ContentTemplate="{DataTemplate local:pages.domiciles}"
+         Route="domiciles" />
+
+        <ShellContent
+         Title="options"
+         ContentTemplate="{DataTemplate local:pages.options}"
+         Route="options" />
+
+        </TabBar>
+        
+</Shell>
